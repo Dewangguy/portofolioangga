@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //admin
-// Route::middleware('auth')->group(function (){
+Route::middleware('auth')->group(function (){
     Route::get('/dashbor', [Dashboardcontroller::class, 'index']);
     Route::get('/', [HomeController::class, 'index']);
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
@@ -29,9 +29,9 @@ use Illuminate\Support\Facades\Route;
     Route::resource('/masterproject', ProjectController::class);
     Route::get('/masterproject/create/{id}', [ProjectController::class, 'createProject']);
     Route::resource('/masterkontak', ContactController::class);
-    Route::get('/homee', [HomeController::class, 'home']);
     Route::get('/masterproject/{id_siswa}/hapus',[projectcontroller::class,"hapus"] )->name('masterproject.hapus');
-// });
+});
+Route::get('/homee', [HomeController::class, 'home']);
 
 //guest
 Route::middleware(['guest'])->group(function (){
