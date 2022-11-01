@@ -12,7 +12,7 @@ class Siswa extends Model
     protected $guarded = ['id'];
 
     public function kontak(){
-        return $this->belongsToMany('App\Models\Jenis_kontak')->withPivot('deskripsi');
+        return $this->hasMany('App\Models\Jenis_kontak');
     }
     public function project(){
         return $this->hasMany('App\Models\Projek', 'id_siswa');

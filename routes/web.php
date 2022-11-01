@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 //admin
 Route::middleware('auth')->group(function (){
-    Route::get('/dashbor', [Dashboardcontroller::class, 'index']);
+    Route::get('/dashbord', [Dashboardcontroller::class, 'index']);
     Route::get('/', [HomeController::class, 'index']);
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
     Route::get('/mastersiswa/{id_siswa}/hapus', [Siswacontroller::class, 'hapus'])->name('mastersiswa.hapus');

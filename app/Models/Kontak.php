@@ -13,9 +13,9 @@ class Kontak extends Model
     protected $table = 'kontak';
     protected $guarded =['id'];              
     public function siswa(){
-        return $this->belongsToMany(Siswa::class,'id_siswa');
+        return $this->belongsTo(Siswa::class,'id_siswa','id');
     }
     public function jenis_kontak(){
-        return $this->belongsTo(Jenis_kontak::class,'id_jenis');
+        return $this->belongsTo(Jenis_kontak::class,'id_jenis','id');
     }
 }

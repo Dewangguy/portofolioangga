@@ -12,6 +12,7 @@
         <h6>Tanggal project</h6>
         {{ $item->tanggal}}
         <h6>Deskripsi project</h6>
+        <img src="{{ asset('/Template/img/' .$item->foto)}}" width="150" class="img-thumbnail"
         {{ $item->deskripsi}}
     </div>
     <div class="card-footer">        
