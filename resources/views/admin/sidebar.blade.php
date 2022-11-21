@@ -45,7 +45,7 @@
         </li>
         <hr class="sidebar-divider">
         <li class="nav-item">
-            <a class="nav-link" href="/home"><i class="fas fa-fw fa-address-book" ></i>
+            <a class="nav-link" href="/homee"><i class="fas fa-fw fa-address-book" ></i>
                 <span>Profile</span></a>
         </li>
         
