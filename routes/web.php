@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function (){
     
     
     // Route::resource('/jnsKontak',JenisController::class);
-    Route::get('/jnsKontak',function() {
+    Route::get('/jeniskontak',function() {
         return "taek";
     });
 });
