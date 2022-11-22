@@ -34,10 +34,10 @@ Route::middleware('auth')->group(function (){
     Route::get('/masterproject/{id_siswa}/hapus',[ProjectController::class,"hapus"] )->name('masterproject.hapus');
     
     
-    // Route::resource('/jnsKontak',JenisController::class);
-    Route::get('/jeniskontak',function() {
-        return "taek";
-    });
+    Route::resource('/jnsKontak',JenisController::class);
+    // Route::get('/jeniskontak',function() {
+    //     return "taek";
+    // });
 });
 Route::get('/homee', [HomeController::class, 'home']);
 
