@@ -88,7 +88,7 @@ class SiswaController extends Controller
     public function show($id)
     {
         $data = Siswa::find($id);
-        return view('ShowSiswa', compact('data'));
+        return view('showSiswa', compact('data'));
     }
 
     /**
@@ -100,7 +100,7 @@ class SiswaController extends Controller
     public function edit($id)
     {
         $data=Siswa::find($id);
-        return view('EditSiswa', compact('data'));
+        return view('editSiswa', compact('data'));
     }
 
     /**
