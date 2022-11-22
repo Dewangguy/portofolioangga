@@ -48,6 +48,12 @@
             <a class="nav-link" href="/homee"><i class="fas fa-fw fa-address-book" ></i>
                 <span>Profile</span></a>
         </li>
+        <hr class="sidebar-divider">
+        <li class="nav-item">
+            <a class="nav-link" href="/jnskontak">
+                <i class="fas fa-id-card-alt"></i>
+                <span>Add Jenis Kontak</span></a>
+        </li>
         
 
         
