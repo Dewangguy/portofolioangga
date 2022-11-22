@@ -28,7 +28,7 @@ class JenisController extends Controller
      */
     public function create()
     {
-        return view('admin.createjnsKontak');
+        return view('createJnsKontak');
     }
 
     /**
@@ -69,7 +69,7 @@ class JenisController extends Controller
     public function edit($id)
     {
         $data = Jenis_kontak::find($id);
-        return view('admin.editjnsKontak', compact('data'));
+        return view('editJnsKontak', compact('data'));
     }
 
     /**
