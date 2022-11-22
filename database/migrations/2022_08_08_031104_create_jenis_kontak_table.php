@@ -15,7 +15,7 @@ class CreateJenisKontakTable extends Migration
     {
         Schema::create('jenis_kontak', function (Blueprint $table) {
             $table->id();
-            $table->char('jenis_kontak');
+            $table->string("jenis_kontak");
             $table->timestamps();
         });
     }

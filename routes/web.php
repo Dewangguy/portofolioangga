@@ -7,6 +7,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\JenisController;
+
 use Illuminate\Support\Facades\Route;
 
 /*

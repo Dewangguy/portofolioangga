@@ -26,9 +26,10 @@
                     <tbody>
                         <?php $i = 1 ?>
                         @foreach ($data as $item)
+                        {{-- @dd($item) --}}
                         <tr>
                         <td>{{$i++}}</td>
-                        <td>{{$item->tipe_kontak}}</td>
+                        <td>{{$item->jenis_kontak}}</td>
                         <td>
                             <a href="jnsKontak/{{$item->id}}/edit" class="btn btn-warning btn-circle btn-sm"><i class="fas fa-edit"></i></a>
                             <form class="d-inline" action="{{route('jnsKontak.destroy',$item->id)}}" method="POST">
