@@ -17,7 +17,7 @@ class JenisController extends Controller
     {
         $data = Jenis_kontak::all();
         $siswa = Siswa::all();
-        dd($data);
+        // dd($data);
         return view('admin.jnsKontak', compact('data','siswa'));
     }
 
