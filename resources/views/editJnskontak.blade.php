@@ -15,7 +15,7 @@
                     </ul>
                 </div>
                 @endif
-                <form class="d-inline"  method="POST" action="{{route('jnskontak.update' , ['jnskontak' => $data->id])}}">
+                <form class="d-inline"  method="POST" action="{{route('jnsKontak.update' , ['jnsKontak' => $data->id])}}">
                     @csrf
                     {{method_field('PUT')}}
                     <div class="form-group">
@@ -25,7 +25,7 @@
 
                     <div class="form-group">
                         <input type="submit" class="btn btn-success" value="simpan">
-                        <a href="{{route('jnskontak.index')}}" class="btn btn-danger">Batal</a>
+                        <a href="{{route('jnsKontak.index')}}" class="btn btn-danger">Batal</a>
                     </div>
                 </form>
             </div>

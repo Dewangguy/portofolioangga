@@ -45,7 +45,7 @@ class JenisController extends Controller
             "tipe_kontak" => "required"
         ],$message);
         Jenis_kontak::create($validated);
-        return redirect()->route('jnskontak.index');
+        return redirect()->route('jnsKontak.index');
     }
 
     /**
@@ -91,7 +91,7 @@ class JenisController extends Controller
         $jenis = Jenis_kontak::find($id);
         $jenis->tipe_kontak = $request->tipe_kontak;
         $jenis->update();
-        return redirect('/jnskontak');
+        return redirect('/jnsKontak');
     }
 
     /**
@@ -103,6 +103,6 @@ class JenisController extends Controller
     public function destroy($id)
     {
         $data = Jenis_kontak::find($id)->delete();
-        return redirect('/jnskontak');
+        return redirect('/jnsKontak');
     }
 }

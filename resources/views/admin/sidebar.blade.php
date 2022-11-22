@@ -50,7 +50,7 @@
         </li>
         <hr class="sidebar-divider">
         <li class="nav-item">
-            <a class="nav-link" href="/jnskontak">
+            <a class="nav-link" href="/jnsKontak">
                 <i class="fas fa-id-card-alt"></i>
                 <span>Add Jenis Kontak</span></a>
         </li>

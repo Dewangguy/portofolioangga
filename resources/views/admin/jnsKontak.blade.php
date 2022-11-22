@@ -9,7 +9,7 @@
     </div>
 </div> --}}
 
-<a href="{{route('jnskontak.create')}}" class="btn btn-success">Tambah Data</a>
+<a href="{{route('jnsKontak.create')}}" class="btn btn-success">Tambah Data</a>
 <div class="row">
     <div class="col-lg-5">
         <div class="card shadow mb">
@@ -30,8 +30,8 @@
                         <td>{{$i++}}</td>
                         <td>{{$item->tipe_kontak}}</td>
                         <td>
-                            <a href="jnskontak/{{$item->id}}/edit" class="btn btn-warning btn-circle btn-sm"><i class="fas fa-edit"></i></a>
-                            <form class="d-inline" action="{{route('jnskontak.destroy',$item->id)}}" method="POST">
+                            <a href="jnsKontak/{{$item->id}}/edit" class="btn btn-warning btn-circle btn-sm"><i class="fas fa-edit"></i></a>
+                            <form class="d-inline" action="{{route('jnsKontak.destroy',$item->id)}}" method="POST">
                                 @method('delete')
                                 @csrf
                                 <button type="submit" class="btn btn-danger btn-circle btn-sm"><i class="fas fa-trash"></i></button>

@@ -15,7 +15,7 @@
                         </ul>
                     </div>
                     @endif
-                    <form class="d-inline" action="{{route('jnskontak.store')}}" method="POST">
+                    <form class="d-inline" action="{{route('jnsKontak.store')}}" method="POST">
                         @csrf
 
                         <div class="form-group">
@@ -25,7 +25,7 @@
 
                         <div class="form-group">
                             <input type="submit" class="btn btn-success" value="simpan">
-                            <a href="{{route('jnskontak.index')}}" class="btn btn-danger">Batal</a>
+                            <a href="{{route('jnsKontak.index')}}" class="btn btn-danger">Batal</a>
                         </div>
                     </form>
                 </div>
