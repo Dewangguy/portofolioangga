@@ -43,7 +43,7 @@ class JenisController extends Controller
             'required' => ':attribute harus diisi dulu bang'
         ];
         $validated = $request->validate([
-            "tipe_kontak" => "required"
+            "jenis_kontak" => "required"
         ],$message);
         Jenis_kontak::create($validated);
         return redirect()->route('jnsKontak.index');
@@ -86,7 +86,7 @@ class JenisController extends Controller
         ];
         
         $this->validate($request,[
-            'tipe_kontak'=>'required',
+            'jenis_kontak'=>'required',
         ],$message);
 
         $jenis = Jenis_kontak::find($id);

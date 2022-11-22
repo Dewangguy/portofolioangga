@@ -19,8 +19,8 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="tipe_kontak">Jenis Kontak</label>
-                            <input type="text" class="form-control" id="tipe_kontak" name="tipe_kontak" value="{{old('tipe_kontak')}}">
+                            <label for="jenis_kontak">Jenis Kontak</label>
+                            <input type="text" class="form-control" id="jenis_kontak" name="jenis_kontak" value="{{old('jenis_kontak')}}">
                         </div>
 
                         <div class="form-group">
