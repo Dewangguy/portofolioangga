@@ -32,6 +32,7 @@ Route::middleware('auth')->group(function (){
     Route::get('/masterproject/create/{id}', [ProjectController::class, 'createProject']);
     Route::resource('/masterkontak', ContactController::class);
     Route::get('/masterproject/{id_siswa}/hapus',[ProjectController::class,"hapus"] )->name('masterproject.hapus');
+    // 
     Route::resource('/jnsKontak',JenisController::class);
 });
 Route::get('/homee', [HomeController::class, 'home']);

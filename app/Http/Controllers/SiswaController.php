@@ -99,7 +99,7 @@ class SiswaController extends Controller
      */
     public function edit($id)
     {
-        $data=Siswa::find($id);
+        $data = Siswa::find($id);
         return view('editSiswa', compact('data'));
     }
 
