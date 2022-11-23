@@ -1,7 +1,11 @@
 @extends('admin.app')
-@section('title', 'Master Kontak')
-@section('content-title', 'Master Kontak')
+@section('title','Master Kontak')
+@section('content-title','Master Kontak')
 @section('content')
+{{-- <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
+        For more information about DataTables, please visit the <a target="_blank"
+            href="https://datatables.net">official DataTables documentation</a>.</p> --}}
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -19,7 +23,14 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    
+                    {{-- <tfoot>
+                        <tr>
+                            <th>Kontak Siswa</th>
+                            <th>Jenis Kontak</th>
+                            <th>Deskripsi</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot> --}}
                     <tbody>
                         @foreach ($kontak as $index => $item)
                         <tr>
@@ -27,21 +38,18 @@
                             <td>{{ $item->jenis_kontak->jenis_kontak }}</td>
                             <td>{{ $item->deskripsi }}</td>
                             <td>
-                                <a href="{{ route('masterkontak.show', ['masterkontak' => $item->id]) }}" class="btn btn-primary btn-circle btn-sm">
+                                {{-- <a href="{{ route('kontak.show', ['kontak' => $item->id]) }}" class="btn btn-primary btn-circle btn-sm">
                                     <i class="fas fa-eye"></i>
-                                </a>
+                                </a> --}}  
+                                <form class="d-inline" action="{{route('masterkontak.destroy',$item->id)}}" method="POST">
                                 <a href="{{ route('masterkontak.edit', ['masterkontak' => $item->id]) }}" class="btn btn-warning btn-circle btn-sm">
                                     <i class="fas fa-edit"></i>
                                 </a>
-                                <form id="form-delete{{ $item->id }}"
-                                    action="{{ route('masterkontak.destroy', ['masterkontak' => $item->id]) }}"
-                                    method="post" style="display: none">
+                              
                                     @method('delete')
                                     @csrf
+                                    <button type="submit" class="btn btn-danger btn-circle btn-sm"><i class="fas fa-trash"></i></button>
                                 </form>
-                                <a href="#" onclick="what({{ $item->id }})" class="btn btn-danger btn-circle btn-sm">
-                                    <i class="fas fa-skull-crossbones"></i>
-                                </a>
                             </td>
                         </tr>
                         @endforeach
@@ -49,6 +57,5 @@
                 </table>
             </div>
         </div>
-    </div>
-
+    </div>      
 @endsection

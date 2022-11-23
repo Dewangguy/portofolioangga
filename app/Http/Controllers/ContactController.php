@@ -75,7 +75,9 @@ class ContactController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = Kontak::find($id);
+        $jenis_kontak = jenis_kontak::find($id);
+        return view ('editKontak', compact('data','jenis_kontak'));
     }
 
     /**
@@ -98,6 +100,7 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Kontak::find($id)->delete();
+        return redirect()->back();
     }
 }
