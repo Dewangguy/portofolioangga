@@ -82,7 +82,7 @@ class ProjectController extends Controller
     public function show($id)
     {
         $data = Siswa::find($id)->project()->get();
-        return view('showproject',compact('data'));
+        return view('showProject',compact('data'));
     }
 
     /**
@@ -94,7 +94,7 @@ class ProjectController extends Controller
     public function edit($id)
     {
         $data = Projek::find($id);
-        return view('editproject', compact('data'));
+        return view('editProject', compact('data'));
     }
 
     /**
