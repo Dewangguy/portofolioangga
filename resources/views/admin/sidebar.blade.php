@@ -43,17 +43,17 @@
             <a class="nav-link" href="/masterkontak"><i class="fas fa-fw fa-address-book" ></i>
                 <span>Master Kontak</span></a>
         </li>
-        <hr class="sidebar-divider">
-        <li class="nav-item">
-            <a class="nav-link" href="/homee"><i class="fas fa-fw fa-address-book" ></i>
-                <span>Profile</span></a>
-        </li>
-        <hr class="sidebar-divider">
         <li class="nav-item">
             <a class="nav-link" href="/jnsKontak">
                 <i class="fas fa-id-card-alt"></i>
                 <span>Add Jenis Kontak</span></a>
         </li>
+        </li>
+        <hr class="sidebar-divider">
+        <hr class="sidebar-divider">
+        <li class="nav-item">
+            <a class="nav-link" href="/homee"><i class="fas fa-fw fa-address-book" ></i>
+                <span>Profile</span></a>v
         
 
         
