@@ -13,9 +13,6 @@
 <div class="row">
     <div class="col-lg-5">
         <div class="card shadow mb">
-            <div class="card-header py-4">
-                <h6 class="m-0 font-weight-bold text-primary">Jenis Kontak</h6>
-            </div>
             <div class="card-body">
                 <table class="table">
                     <thead>
