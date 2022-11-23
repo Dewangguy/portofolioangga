@@ -19,14 +19,7 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Kontak Siswa</th>
-                            <th>Jenis Kontak</th>
-                            <th>Deskripsi</th>
-                            <th>Action</th>
-                        </tr>
-                    </tfoot>
+                    
                     <tbody>
                         @foreach ($kontak as $index => $item)
                         <tr>
