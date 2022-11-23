@@ -61,7 +61,7 @@ class ProjectController extends Controller
         
         $file = $request->file('foto');
         $nama_file = time() . '_' . $file->getClientOriginalName();
-        $tujuan_upload = './template/img/';
+        $tujuan_upload = './Template/img/';
         $file->move ($tujuan_upload,$nama_file);
         Projek::create([
             'id_siswa' => $request->id_siswa,
@@ -125,10 +125,10 @@ class ProjectController extends Controller
         if($request->foto != ""){
 
             $project = Projek::find($id);
-            file::delete('./template/img'.$project->foto);
+            file::delete('./Template/img'.$project->foto);
             $file = $request->file('foto');
         $nama_file = time() . '_' . $file->getClientOriginalName();
-        $tujuan_upload = './template/img';
+        $tujuan_upload = './Template/img';
         $file->move ($tujuan_upload,$nama_file);
         $project->id_siswa=$request->id_siswa;
         $project->nama_project=$request->nama_project;
