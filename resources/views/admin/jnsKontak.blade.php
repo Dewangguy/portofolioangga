@@ -8,13 +8,15 @@
         <div class="alert alert-succes"></div>
     </div>
 </div> --}}
-
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
 <a href="{{route('jnsKontak.create')}}" class="btn btn-success">Tambah Data</a>
 <div class="row">
     <div class="col-lg-5">
         <div class="card shadow mb">
             <div class="card-body">
-                <table class="table">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">            
                     <thead>
                         <th>No.</th>
                         <th scope="col">Jenis Kontak</th>

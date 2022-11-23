@@ -90,7 +90,7 @@ class JenisController extends Controller
         ],$message);
 
         $jenis = Jenis_kontak::find($id);
-        $jenis->tipe_kontak = $request->tipe_kontak;
+        $jenis->jenis_kontak = $request->jenis_kontak;
         $jenis->update();
         return redirect('/jnsKontak');
     }
